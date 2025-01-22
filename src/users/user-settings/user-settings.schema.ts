@@ -21,9 +21,6 @@ export class UserSetting extends Base {
 
   @Prop({ type: String, default: 'en' })
   language?: string;
-
-  @Prop({ type: [String], default: [] })
-  philosophies?: string[];
 }
 
 export const UserSettingSchema = SchemaFactory.createForClass(UserSetting);

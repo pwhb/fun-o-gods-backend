@@ -46,6 +46,6 @@ async function bootstrap() {
   const bot = app.get(getBotToken());
   app.use(bot.webhookCallback(configService.get('TELEGRAM_WEBHOOK_PATH')));
 
-  await app.listen(configService.get('PORT') ?? 3000);
+  await app.listen(configService.get('PORT') ?? 8080);
 }
 bootstrap();
