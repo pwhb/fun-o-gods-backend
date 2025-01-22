@@ -1,0 +1,23 @@
+{
+  "RESPONSES": {
+    "SUCCESS": "Success",
+    "NOT_FOUND": "Not found",
+    "USER_CREATED_SUCCESSFULLY": "User created successfully.",
+    "BAD_REQUEST_EXCEPTION": "Bad Request Exception",
+    "USER_ALREADY_EXISTS": "User already exists.",
+    "USER_NOT_FOUND": "User not found.",
+    "INVALID_PASSWORD": "Incorrect password.",
+    "INTERNAL_SERVER_ERROR": "Internal Server Error",
+    "DUPLICATE_KEY_ERROR": "Duplicate Key Error.",
+    "FAILED_TO_CREATE": "Failed to create.",
+    "PASSWORD_CHANGED_SUCCESSFULLY": "Password changed successfully.",
+    "SESSION_EXPIRED_PLEASE_LOGIN_AGAIN": "Session expired. Please login again.",
+    "JWT_EXPIRED": "jwt expired",
+    "JWT_MALFORMED": "jwt malformed",
+    "TOKENEXPIREDERROR": "TokenExpiredError",
+    "JSONWEBTOKENERROR": "JsonWebTokenError",
+    "USER_LOGGED_OUT": "User logged out successfully.",
+    "ALREADY_ADDED": "Already added.",
+    "SAME_USER": "Same user."
+  }
+}
