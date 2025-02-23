@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { TokensService } from './tokens/tokens.service';
-import { UsersModule } from 'src/users/users.module';
 import { Auth, AuthSchema } from './auth.schema';
 import { MongooseModule } from '@nestjs/mongoose';
 import { JwtModule } from '@nestjs/jwt';
@@ -12,6 +11,7 @@ import { BasicStrategy } from './basic.strategy';
 import { ConfigsModule } from 'src/configs/configs.module';
 import { PermissionsModule } from 'src/core/permissions/permissions.module';
 import { UtilsService } from 'src/core/utils/utils.service';
+import { UsersModule } from 'src/core/users/users.module';
 
 @Module({
   imports: [
@@ -29,6 +29,12 @@ import { UtilsService } from 'src/core/utils/utils.service';
     ConfigsModule,
   ],
   controllers: [AuthController],
-  providers: [AuthService, TokensService, JwtStrategy, BasicStrategy, UtilsService],
+  providers: [
+    AuthService,
+    TokensService,
+    JwtStrategy,
+    BasicStrategy,
+    UtilsService,
+  ],
 })
 export class AuthModule {}

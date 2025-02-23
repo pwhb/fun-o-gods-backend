@@ -2,14 +2,16 @@ import { Controller, Post, Body, Req, UseGuards } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { LoginAuthDto } from './dto/login-auth.dto';
 import { RegisterAuthDto } from './dto/register-auth.dto';
-import { UsersService } from 'src/users/users.service';
+
 import { Request } from 'express';
 import { BasicAuthGuard } from './auth.guard';
 import { ConfigsService } from 'src/configs/configs.service';
 import { VisibilityType } from 'src/configs/configs.schema';
 import { ApiBasicAuth, ApiTags } from '@nestjs/swagger';
-import { UserSettingsService } from 'src/users/user-settings/user-settings.service';
 import { UtilsService } from 'src/core/utils/utils.service';
+import { UserSettingsService } from 'src/core/users/user-settings/user-settings.service';
+import { UsersService } from 'src/core/users/users.service';
+
 @ApiBasicAuth()
 @ApiTags('auth')
 @UseGuards(BasicAuthGuard)

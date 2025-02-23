@@ -6,7 +6,6 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { CacheModule } from '@nestjs/cache-manager';
 import { TelegrafModule } from 'nestjs-telegraf';
 import { AuthModule } from './auth/auth.module';
-import { UsersModule } from './users/users.module';
 import { ConfigsModule } from './configs/configs.module';
 import { CacheService } from './core/cache/cache.service';
 import { session } from 'telegraf';
@@ -18,6 +17,7 @@ import { MenusModule } from './core/menus/menus.module';
 import { HomeController } from './home/home.controller';
 import { UtilsService } from './core/utils/utils.service';
 import { BotService } from './telegram/bot/bot.service';
+import { UsersModule } from './core/users/users.module';
 
 @Module({
   imports: [

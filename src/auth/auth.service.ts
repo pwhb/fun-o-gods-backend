@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import bcrypt from 'bcrypt';
-import { UsersService } from 'src/users/users.service';
+
 import { Auth } from './auth.schema';
 import { InjectModel } from '@nestjs/mongoose';
 import { FilterQuery, Model } from 'mongoose';
 import { JwtService } from '@nestjs/jwt';
 import STRINGS from 'src/common/consts/strings.json';
+import { UsersService } from 'src/core/users/users.service';
 
 @Injectable()
 export class AuthService {

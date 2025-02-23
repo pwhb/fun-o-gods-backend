@@ -5,7 +5,6 @@ import { CacheService } from 'src/core/cache/cache.service';
 import { InjectModel } from '@nestjs/mongoose';
 import { FilterQuery, Model, QueryOptions } from 'mongoose';
 import STRINGS from 'src/common/consts/strings.json';
-import { permission } from 'process';
 import { Auth } from 'src/auth/auth.schema';
 
 @Injectable()

@@ -7,8 +7,6 @@ import STRINGS from 'src/common/consts/strings.json';
 @ApiTags('home')
 @UseGuards(JwtAuthGuard, RoleGuard)
 @Controller('api/v1/home')
-export class HomeController
-{
-  constructor() { }
-
+export class HomeController {
+  constructor() {}
 }
